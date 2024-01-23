@@ -1,7 +1,11 @@
 # spring framework
 
+一行一行去看 [spring-framework](https://github.com/spring-projects/spring-framework) 核心代码不太现实，还是得根据核心功能进行针对性学习Spring源码。
 
-## 目录学习
-按照顺序，根据下面目录学习：
-1. spring-beans：负责提供对 Bean 的支持，包括 Bean 的定义、创建、管理以及与依赖注入相关的功能。
+明白 Spring 的核心功能：
+
+1. Bean管理和生命周期
+2. IOC
+3. AOP
+4. 事务管理
 
