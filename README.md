@@ -1,11 +1,7 @@
 # spring framework
 
-一行一行去看 [spring-framework](https://github.com/spring-projects/spring-framework) 核心代码不太现实，还是得根据核心功能进行针对性学习Spring源码。
+> 参考：[https://github.com/fuzhengwei/small-spring](https://github.com/fuzhengwei/small-spring)
 
-明白 Spring 的核心功能：
+spring-01：如何写一个简易的Bean容器？
 
-1. Bean管理和生命周期
-2. IOC
-3. AOP
-4. 事务管理
 

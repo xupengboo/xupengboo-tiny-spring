@@ -1,38 +1,25 @@
 package com.xupengboo;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import com.xupengboo.bean.UserService;
+import org.junit.Test;
 
 /**
- * Unit test for simple App.
+ * @author: xupengboo
+ * @date: 2024/1/23 13:41
+ * @description: 测试类
  */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
+public class AppTest {
+
+    @Test
+    public void appTest(){
+        // 1. 初始化容器
+        BeanFactory beanFactory = new BeanFactory();
+        // 2. 注入bean
+        BeanDefinition beanDefinition = new BeanDefinition(new UserService());
+        beanFactory.registerBeanDefinition("userService",beanDefinition);
+        // 3. 从容器中，获取bean对象
+        UserService userService = (UserService) beanFactory.getBean("userService");
+        userService.queryUserInfo();
     }
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
 }
